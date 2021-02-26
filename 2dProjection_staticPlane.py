@@ -7,7 +7,7 @@ def generateProjectionPlane():
     xs = np.linspace(-10, 10, 100)
     zs = np.linspace(-10, 10, 100)
     X, Z = np.meshgrid(xs, zs)
-    Y = 0
+    Y = 9
     
     v1 = np.array([1,0,0])
     v2 = np.array([0,0,1])
@@ -58,7 +58,7 @@ for i in range(spiral.shape[0]):                   # and spiralProj the same obj
 
 for i in range(spiral.shape[0]): # no idea why this will rarely break, maybe not truly n[i]!=0?
     if n[i] != 0:
-        spiralProj[i] = spiral[i] * 0
+        spiralProj[i] = 9
 
 # plotting lines
 ax.plot3D(line[0], line[1], line[2], c='b') # original vector
