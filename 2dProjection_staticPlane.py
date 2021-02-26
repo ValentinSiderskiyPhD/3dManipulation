@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from mpl_toolkits import mplot3d
 
 def generateProjectionPlane():
     ''' Simple function to generate static plane for projection on XZ axes'''
@@ -75,3 +76,4 @@ ax.legend(['Original Line','Projected Line', 'Original Spiral', 'Projected Spira
 # ax.view_init(elev=0,azim=0) # parallel to plane
 # ax.view_init(elev=0,azim=90) # head-on to plane
 # ax.view_init(elev=90,azim=0) # above plane
+plt.show()
